@@ -2,13 +2,56 @@
 
 A.  Explain what recursion is and when it is useful.
     Explain what the |termination step| and |recursion step| are in a recursive method.
+    
+Ans: Recursion is a funtions that calls itself. It will loop untill it arrives to the termination step(the final solution).
+     It is useful when you have to do something with sequences, like keep cleaning things or mathmatical sequences.
+     
+     Termination step is the first line of the loop that contains a boolean to determine when the recursion stops.
+     
+     Recursion step is the last line of the method that calls the method itself to form a loop.
 
 B.  Describe the difference between a Queue and a Stack.
 
+Ans: Queue is a one dimentional data structure, like a waiting line. When things go in, we call it add. When things get out, we call it remove.
+     We call the first thing Peek. The first thing get in the first one get out(FIFO).
+     
+     Stack is a one dimentional data structure, like a pile of things. When we put things in, we call it push. When we take things out, we call it pop.
+     We call the top thing Peek. The last thing get in the first one get out(LIFO).
+
 C.  Write a class for an element doublely-linked list.
+
+Ans: public class DLink{
+        Object thing;
+        DLink next;
+        DLink previous;
+        
+        public DLink() {}
+    }
+    
+    public class DLinkList{
+        DLink head = new DLink();
+        int length = 0;
+        
+        public DLinkList(){}
+    }
 
 D.  Explain what a Merkle Tree is.  
     Describe the structure and purpose of a Merkle Tree.
     What is the Merkle root?
     What is the function of a certificate in this data structure?
+    
+Ans: A Merkle Tree is the structure that merge a bunch of files' hash codes to one hash code.
+     
+     Assume that there are 5 files that we need to hash into one. First, we get the hash code of each of the file. Second, we 
+     hash the sum of the first and second hash code, then the third and forth. The 5th file left doesn't have a following hash
+     code to add up, so we hash the sum of itself and itself. Third, we use recursion to do the same steps on the result we get
+     on the previous step until we get the final hash code.
+     
+     Merkle root is the hash of all the hashes of all the transactions in the block(the final hash code from the bunch of
+     files).
+     
+     The certificate of merkle tree is much faster than hashing n files all together. To verify a file from merkle root, the 
+     merkle tree structure only need log2(n) (n refers to numbers of file that hashed in the root) times to get to the merkle
+     root, but the normal way need n times to get to the merkle root.
+    
     
