@@ -2,12 +2,24 @@
 
 A.  Explain how digital signature works with public/private keypairs.
 
-B.  Identify your favorite Java project this semester.  
+Ans: When you want to identify the file is yours, you can generate a public and private key for the file. The public key is 
+     a encrypt code that release to the public, and the private key is to decrypt the encrypt code that you have made which 
+     you won't release to public. So the private key can verify that the file is yours like a signature.
+
+B.  Identify your favorite Java project this semester.
     Describe two things you learned by doing the project.
     Describe two ways in which the project could be improved or expanded.
     
+Ans: My favourite Java project is the GUItest.
+     I have learn't how actually interface is implements and used, also how to create a interface for a program.
+     I think the project could be improved and expanded by writing more in depth graphical function that make the GUI more
+     nice and user friendly. Also we can write a GUI for the programs we have write before.
+    
 C.  Describe two advantages of object-oriented programming.
     Describe two disadvantages of object-oriented programming.
+
+Ans: advantages: easy to maintian and modify, provides a good framework for code libraries
+     disadvantages: the size is larger than other program, the speed is slower mostly because of their size.
     
 D.  Consider the following PYTHON code for the MNode class given below.
     What is the difference in the way Python and Java handle the declaration of datatypes?
@@ -49,3 +61,13 @@ class MNode:
         
         return read
 -----------------------------------------------------------------------------
+
+Ans: The difference in the way Python and Java handle the declaration of datatypes are that Python doesn't need to declare the
+     datatype when writing fields and methods, it can identifies the datatypes itself.
+     
+     The difference in how constructors are written in Python vs Java is that Python's constructors use __init__ other than 
+     copying the name of the class into it. The fields of the object, it uses "self." to represent other than "this." that
+     Java is using.
+     
+     I prefer to use Python because it is less complicated also less limitation when constructing a method, but for learning
+     purpose Java is better because it makes you have a better concept and understanding of the structure.
