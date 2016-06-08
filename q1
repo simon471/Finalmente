@@ -36,6 +36,7 @@ public class Wizard implements TheGodModule{
   
 }
 
+
 A.  Write a method for the Wizard class named "powerUp" that adds 10 to the field "points".
 
 B.  Write a method "cast" that casts the n-th element of the "spells" array.  
